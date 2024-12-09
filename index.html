@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Class Timetable</h1>
+        <select id="day-selector">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+        </select>
+    </header>
+    <main>
+        <table id="timetable">
+            <thead>
+                <tr>
+                    <th>Period</th>
+                    <th>Subject</th>
+                    <th>Faculty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Monday -->
+                <tr data-day="Monday">
+                    <td>09:40 - 10:30</td>
+                    <td>Digital Electronics</td>
+                    <td>Ragni Shukla</td>
+                </tr>
+                <tr data-day="Monday">
+                    <td>10:30 - 11:20</td>
+                    <td>Python Programming</td>
+                    <td>Dr. Akansha Srivastav</td>
+                </tr>
+                <tr data-day="Monday">
+                    <td>11:20 - 12:10</td>
+                    <td>Discrete Structure</td>
+                    <td>Ms. Niharika Parashar</td>
+                </tr>
+                <tr data-day="Monday">
+                    <td>12:10 - 01:00</td>
+                    <td>Data Structure and Algorithms</td>
+                    <td>Mr. Prashant Chaudhary</td>
+                </tr>
+                <tr data-day="Monday">
+                    <td>01:50 - 02:40</td>
+                    <td>Technical Communication</td>
+                    <td>Dr. Neelima Bangwal </td>
+                </tr>
+                <tr data-day="Monday">
+                    <td>02:40 - 03:30</td>
+                    <td>Object Oriented Programming (T)</td>
+                    <td>Mr. Kshitij Jain </td>
+                </tr>
+                
+
+                <!-- Tuesday -->
+                <tr data-day="Tuesday">
+                    <td>9:40 - 10:30</td>
+                    <td>Technical Communication</td>
+                    <td>Dr. Neelima Bangwal</td>
+                </tr>
+                <tr data-day="Tuesday">
+                    <td>10:30 - 11:20</td>
+                    <td>Object Oriented Programming</td>
+                    <td>Mr. Kshitij Jain</td>
+                </tr>
+                <tr data-day="Tuesday">
+                    <td>11:20 - 12:10</td>
+                    <td>Discrete Structure</td>
+                    <td>Ms. Niharika Parashar</td>
+                </tr>
+                <tr data-day="Tuesday">
+                    <td>12:10 - 01:00</td>
+                    <td>Digital Electronics</td>
+                    <td>Ragni Shukla</td>
+                </tr>
+                <tr data-day="Tuesday">
+                    <td>01:50 - 02:40</td>
+                    <td>Digital Electronics(T)</td>
+                    <td>Ragni Shukla</td>
+                </tr>
+                <tr data-day="Tuesday">
+                    <td>02:40 - 03:30</td>
+                    <td>Discrete Structure(T)</td>
+                    <td>Ms. Niharika Parashar</td>
+                </tr>
+                
+
+
+                <!-- Wednesday -->
+                <tr data-day="Wednesday">
+                    <td>9:40 - 10:30</td>
+                    <td>Python Programming</td>
+                    <td>Dr. Akansha Srivastav</td>
+                </tr>
+                <tr data-day="Wednesday">
+                    <td>10:30 - 11:20</td>
+                    <td>Object Oriented Programming</td>
+                    <td>Mr. Kshitij Jain </td>
+                </tr>
+                <tr data-day="Wednesday">
+                    <td>11:20 - 12:10</td>
+                    <td>Data Structure and Algorithms</td>
+                    <td>Mr. Prashant Chaudhary</td>
+                </tr>
+                <tr data-day="Wednesday">
+                    <td>12:10 - 01:00</td>
+                    <td>Technical Communication</td>
+                    <td>Ms. Niharika Parashar</td>
+                </tr>
+                <tr data-day="Wednesday">
+                    <td>01:50 - 02:40</td>
+                    <td>Python Programming Lab-3</td>
+                    <td>Dr. Akansha Srivastav</td>
+                </tr>
+                <tr data-day="Wednesday">
+                    <td>02:40 - 03:30</td>
+                    <td>Python Programming Lab-3</td>
+                    <td>Dr. Akansha Srivastav</td>
+                </tr>
+
+
+                <!-- Thursday -->
+                <tr data-day="Thursday">
+                    <td>9:40 - 10:30</td>
+                    <td>Internship-I/Mini Project-I</td>
+                    <td>Ms. Anita</td>
+                </tr>
+                <tr data-day="Thursday">
+                    <td>10:30 - 11:20</td>
+                    <td>Data Structure and Algorithms</td>
+                    <td>Mr. Prashant Chaudhary</td>
+                </tr>
+                <tr data-day="Thursday">
+                    <td>11:20 - 12:10</td>
+                    <td>Object Oriented Programming LAB-3</td>
+                    <td>Dr. Ahmad Jamal </td>
+                </tr>
+                <tr data-day="Thursday">
+                    <td>12:10 - 01:00</td>
+                    <td>Object Oriented Programming LAB-3</td>
+                    <td>Dr. Ahmad Jamal </td>
+                </tr>
+                <tr data-day="Thursday">
+                    <td>01:50 - 02:40</td>
+                    <td>Discrete Structure</td>
+                    <td>Ms. Niharika Parashar</td>
+                </tr>
+                <tr data-day="Thursday">
+                    <td>02:40 - 03:30</td>
+                    <td>Data Structure and Algorithms(T)</td>
+                    <td>Mr. Prashant Chaudhary</td>
+                </tr>
+                
+
+                <!-- Friday -->
+                <tr data-day="Friday">
+                    <td>9:40 - 10:30</td>
+                    <td>Data Structure and Algorithms LAB-3</td>
+                    <td>Mr. Prashant Chaudhary</td>
+                </tr>
+                <tr data-day="Friday">
+                    <td>10:30 - 11:20</td>
+                    <td>Data Structure and Algorithms LAB-3</td>
+                    <td>Mr. Prashant Chaudhary</td>
+                </tr>
+                <tr data-day="Friday">
+                    <td>11:20 - 12:10</td>
+                    <td>Digital Electronics</td>
+                    <td>Ragni Shukla</td>
+                </tr>
+                <tr data-day="Friday">
+                    <td>12:10 - 01:00</td>
+                    <td>Discrete Structure</td>
+                    <td>Ms. Niharika Parashar</td>
+                </tr>
+                <tr data-day="Friday">
+                    <td>01:50 - 02:40</td>
+                    <td>Object Oriented Programming</td>
+                    <td>Mr. Kshitij Jain </td>
+                </tr>
+                <tr data-day="Friday">
+                    <td>02:40 - 03:30</td>
+                    <td>Internship-I/Mini Project-I</td>
+                    <td>Ms. Anita</td>
+                </tr>
+
+
+                 <!-- Saturday -->
+                 <tr data-day="Saturday">
+                    <td>9:40 - 10:30</td>
+                    <td>Digital Electronics</td>
+                    <td>Ragni Shukla</td>
+                </tr>
+                <tr data-day="Saturday">
+                    <td>10:30 - 11:20</td>
+                    <td>Data Structure and Algorithms</td>
+                    <td>Mr. Prashant Chaudhary</td>
+                </tr>
+                <tr data-day="Saturday">
+                    <td>11:20 - 12:10</td>
+                    <td>Object Oriented Programming</td>
+                    <td>Mr. Kshitij Jain </td>
+                </tr>
+                <tr data-day="Saturday">
+                    <td>12:10 - 01:00</td>
+                    <td>Discrete Structure</td>
+                    <td>Ms. Niharika Parashar</td>
+                </tr>
+                <!-- <tr data-day="Saturday">
+                    <td>01:50 - 02:40</td>
+                    <td>Onject Oriented Programming</td>
+                    <td>Mr. Kshitij Jain </td>
+                </tr>
+                <tr data-day="Saturday">
+                    <td>02:40 - 03:30</td>
+                    <td>Internship-I/Mini Project-I/td>
+                        <td>Ms. Anita</td>
+                </tr> -->
+            </tbody>
+        </table>
+
+        <footer>
+            <p>Made by <span>Udit Pandey & Sudhanshu Kumar</span></p>
+        </footer>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
